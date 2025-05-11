@@ -1,0 +1,7 @@
+{
+  "name": "GalleryCloud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
