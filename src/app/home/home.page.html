@@ -1,6 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Nuevo Registro</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/list">
+        <ion-icon name="list-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -28,6 +33,7 @@
     <ion-button expand="block" color="success" type="submit" [disabled]="loading || !registroForm.valid || !imageFile" class="ion-margin-top">
       {{ loading ? 'Guardando...' : 'Guardar Registro' }}
     </ion-button>
+    
   </form>
 
 </ion-content>
